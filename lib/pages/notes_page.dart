@@ -22,7 +22,7 @@ class _NotesPageState extends State<NotesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My Secure Notes')),
+      appBar: AppBar(title: const Text('My Notes')),
       body: BlocConsumer<NoteCubit, NoteState>(
         listener: (context, state) {
           if (state is NoteActionSuccess) {
