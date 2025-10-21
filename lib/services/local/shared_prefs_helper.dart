@@ -39,9 +39,4 @@ class SharedPrefsHelper {
     notes.removeWhere((n) => n.id == id);
     await saveNotes(notes);
   }
-
-  Future<void> clearAll() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_notesKey);
-  }
 }
